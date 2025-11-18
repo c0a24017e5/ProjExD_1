@@ -32,17 +32,13 @@ def main():
         
         key_lst = pg.key.get_pressed()
         if key_lst[pg.K_UP]: 
-            x_p = 0
             y_p = -1
         if key_lst[pg.K_DOWN]: 
-            x_p = 0
             y_p = 1
         if key_lst[pg.K_LEFT]: 
-            x_p = -1
-            y_p = 0
+            x_p = -2
         if key_lst[pg.K_RIGHT]: 
             x_p = 1
-            y_p = 0
         kk_rct.move_ip(x_p,y_p)
         
         pg.display.update()

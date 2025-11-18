@@ -25,7 +25,7 @@ def main():
         screen.blit(bg_img, [-x, 0])   #1つ目
         screen.blit(bg_img2, [-x+1600, 0]) #1つ目が終わったら表示される+反転 練習８
         screen.blit(bg_img, [-x+3200, 0])
-        screen.blit(kk_img, kk_rct)
+        screen.blit(kk_img, kk_rct) #t5
         
         key_lst = pg.key.get_pressed()
         if key_lst[pg.K_UP]: 

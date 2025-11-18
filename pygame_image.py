@@ -24,8 +24,8 @@ def main():
         screen.blit(bg_img2, [-x+1600, 0]) #1つ目が終わったら表示される+反転 練習８
         screen.blit(bg_img, [-x+3200, 0])
         kk_rct = kk_img.get_rect()   #「 t１
-        kk_rct.center = 300, 200     # |
-        screen.blit(kk_img, kk_rct)  # |
+        kk_rct.center = 300, 200     #  t2
+        screen.blit(kk_img, kk_rct)  # 
         
         pg.display.update()
         tmr += 1        

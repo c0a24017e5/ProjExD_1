@@ -19,10 +19,12 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
 
-        x = tmr
+        x = tmr % 3200 #練習９
         screen.blit(bg_img, [-x, 0])   #1つ目
         screen.blit(bg_img2, [-x+1600, 0]) #1つ目が終わったら表示される+反転 練習８
+        screen.blit(bg_img, [-x+3200, 0])
         screen.blit(kk_img, [300, 200])
+        
         pg.display.update()
         tmr += 1        
         clock.tick(200)

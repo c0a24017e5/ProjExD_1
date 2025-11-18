@@ -18,15 +18,11 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
 
-        # key_lst = pg.key.get_pressed()
-        # if key_lst[pg.K_UP]: 
-        #     kk_img.move_ip((0, -1))
-
         screen.blit(bg_img, [0, 0])
         screen.blit(kk_img, [300, 200])
         pg.display.update()
         tmr += 1        
-        clock.tick(10)
+        clock.tick(1)
 
 
 if __name__ == "__main__":
